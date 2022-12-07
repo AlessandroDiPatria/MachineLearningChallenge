@@ -1,5 +1,6 @@
 
 # News Popularity Data Analysis
+![Schermata 2022-12-07 alle 23 34 37](https://user-images.githubusercontent.com/82099379/206311522-4e84680a-a3c8-4d4a-bd6e-3d4bc08503f6.png)
 
 In the first part I tried plotting some statistics about the dataset as the number of null/none values, general statistics using "data.describe" that gives us min, max,std count and many others for each feature. The null values were very few. It could be easily deleted but I opted to replace them. I decided to replace all none and null values using Simple Imputer with the strategy mean. In order to increase accuracy of each classifier I decided to scale the dataset between 0,1 with MinMax classifier.
 
