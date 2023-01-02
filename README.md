@@ -1,5 +1,5 @@
 
-# Online news popularity;
+# Online news popularity
 ![Schermata 2022-12-07 alle 23 34 37](https://user-images.githubusercontent.com/82099379/206311522-4e84680a-a3c8-4d4a-bd6e-3d4bc08503f6.png)
 
 The provided dataset consists of one single csv file ("OnlineNewsPopularity.csv");
