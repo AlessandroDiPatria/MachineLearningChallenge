@@ -70,17 +70,28 @@ Perform feature importance analysis
 
 ### Decision Three 
 
+**Results :**
+
 ![Schermata 2023-01-02 alle 12 41 17](https://user-images.githubusercontent.com/82099379/210226643-e20f7ae7-cbd6-494b-947a-72dee1254383.png)
 
 ### SVM 
+
+**Results :**
+
 ![Schermata 2023-01-02 alle 12 41 41](https://user-images.githubusercontent.com/82099379/210226673-8e8f5a76-e71f-4339-84c8-b7131d9e545b.png)
 
 
 ### Ensamble Methods 
+
+**Results :**
+
 ![Schermata 2023-01-02 alle 12 42 12](https://user-images.githubusercontent.com/82099379/210226724-56d19016-6d00-47e0-8892-1afc84974d4a.png)
 
 
 ### Multilayer Perceptron Network
+
+**Results :**
+
 ![Schermata 2023-01-02 alle 12 42 40](https://user-images.githubusercontent.com/82099379/210226771-9f069990-588f-4107-88fb-0044fd25c785.png)
 
 
