@@ -56,7 +56,9 @@ Re-Sampling share columns using SMOTE
 
 
 ## Feature importance analysis 
+
 Perform feature importance analysis
+
 ![Schermata 2023-01-02 alle 12 39 08](https://user-images.githubusercontent.com/82099379/210226416-d7a7f4e0-56d7-40b0-b26b-ad9b526ffbe2.png)
 
 *Filter ony useful features*
