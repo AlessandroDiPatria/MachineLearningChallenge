@@ -1,6 +1,89 @@
 
-# News Popularity Data Analysis
+# Online news popularity;
 ![Schermata 2022-12-07 alle 23 34 37](https://user-images.githubusercontent.com/82099379/206311522-4e84680a-a3c8-4d4a-bd6e-3d4bc08503f6.png)
+
+The provided dataset consists of one single csv file ("OnlineNewsPopularity.csv");
+The provided dataset is a modified noisy version of the original dataset described in [1];
+[1] K. Fernandes, P. Vinagre and P. Cortez. A Proactive Intelligent Decision Support System for Predicting the Popularity of Online News. Proceedings of the 17th EPIA 2015 - Portuguese Conference on Artificial Intelligence, September, Coimbra, Portugal
+
+This dataset summarizes a heterogeneous set of features about articles published by Mashable in a period of two years. The goal of the task is to predict the number of shares in social networks (popularity).
+
+Number of Instances: 39,797
+
+Number of Attributes: 61
+
+Target: shares
+
+
+## Cleaning and Prepocessing
+
+### Remove or impute "null" values
+Remove all null values throught simple imputer and check if is correctly applied on our dataset
+![Schermata 2023-01-02 alle 12 32 01](https://user-images.githubusercontent.com/82099379/210225738-396290a2-c900-4705-b129-5a22848f912f.png)
+
+
+### Scaling
+Scaling the Dataset with MinMax Scaling
+![Schermata 2023-01-02 alle 12 31 00](https://user-images.githubusercontent.com/82099379/210225620-e65e3e17-2410-4fd2-a741-50e2dfe34e2f.png)
+
+### Discretize share columns
+![Schermata 2023-01-02 alle 12 36 56](https://user-images.githubusercontent.com/82099379/210226211-8a1ceed7-885d-4548-a1b8-6064fe431746.png)
+
+### Re-Sampling  using SMOTE
+Re-Sampling share columns using SMOTE
+![Schermata 2023-01-02 alle 12 38 02](https://user-images.githubusercontent.com/82099379/210226321-33b60622-5b26-4737-93f9-c4142566271a.png)
+
+
+
+
+
+
+## Dataset Analysis
+
+1. Total Number of Samples:
+39648
+
+2. Table with 15 examples
+
+3. Plot no-discretize share columns
+
+![Schermata 2023-01-02 alle 12 33 37](https://user-images.githubusercontent.com/82099379/210225907-c1f006c8-778b-4d8d-8133-e7f4132e0100.png)
+
+4. A bar chart counting the attributes: data_channel_is_lifestyle, data_channel_is_entertainment, data_channel_is_bus, data_channel_is_socmed, data_channel_is_tech, data_channel_is_world;
+
+![Schermata 2023-01-02 alle 12 36 22](https://user-images.githubusercontent.com/82099379/210226172-61dab5a0-fc87-4fc6-b04b-fb4943b1dd4e.png)
+
+
+##Feature importance analysis 
+Perform feature importance analysis
+![Schermata 2023-01-02 alle 12 39 08](https://user-images.githubusercontent.com/82099379/210226416-d7a7f4e0-56d7-40b0-b26b-ad9b526ffbe2.png)
+
+*Filter ony useful features*
+
+![Schermata 2023-01-02 alle 12 39 33](https://user-images.githubusercontent.com/82099379/210226453-7f4be615-7f14-41c8-b477-532194bece9d.png)
+
+
+## Model Selection 
+
+### Decision Three 
+
+![Schermata 2023-01-02 alle 12 41 17](https://user-images.githubusercontent.com/82099379/210226643-e20f7ae7-cbd6-494b-947a-72dee1254383.png)
+
+### SVM 
+![Schermata 2023-01-02 alle 12 41 41](https://user-images.githubusercontent.com/82099379/210226673-8e8f5a76-e71f-4339-84c8-b7131d9e545b.png)
+
+
+### Ensamble Methods 
+![Schermata 2023-01-02 alle 12 42 12](https://user-images.githubusercontent.com/82099379/210226724-56d19016-6d00-47e0-8892-1afc84974d4a.png)
+
+
+### Multilayer Perceptron Network
+![Schermata 2023-01-02 alle 12 42 40](https://user-images.githubusercontent.com/82099379/210226771-9f069990-588f-4107-88fb-0044fd25c785.png)
+
+
+
+
+## Resume 
 
 In the first part I tried plotting some statistics about the dataset as the number of null/none values, general statistics using "data.describe" that gives us min, max,std count and many others for each feature. The null values were very few. It could be easily deleted but I opted to replace them. I decided to replace all none and null values using Simple Imputer with the strategy mean. In order to increase accuracy of each classifier I decided to scale the dataset between 0,1 with MinMax classifier.
 
