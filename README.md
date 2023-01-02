@@ -31,6 +31,7 @@ Scaling the Dataset with MinMax Scaling
 
 ### Re-Sampling  using SMOTE
 Re-Sampling share columns using SMOTE
+
 ![Schermata 2023-01-02 alle 12 38 02](https://user-images.githubusercontent.com/82099379/210226321-33b60622-5b26-4737-93f9-c4142566271a.png)
 
 
@@ -54,7 +55,7 @@ Re-Sampling share columns using SMOTE
 ![Schermata 2023-01-02 alle 12 36 22](https://user-images.githubusercontent.com/82099379/210226172-61dab5a0-fc87-4fc6-b04b-fb4943b1dd4e.png)
 
 
-##Feature importance analysis 
+## Feature importance analysis 
 Perform feature importance analysis
 ![Schermata 2023-01-02 alle 12 39 08](https://user-images.githubusercontent.com/82099379/210226416-d7a7f4e0-56d7-40b0-b26b-ad9b526ffbe2.png)
 
